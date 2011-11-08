@@ -1,0 +1,8 @@
+syntax: glob
+.DS_Store
+*~
+env
+env/*
+*.pyc
+*.pyo
+.epio-app

@@ -1,0 +1,75 @@
+/* This stylesheet is borrowed from Ryshcate. */
+
+/* Page layout */
+body {
+    color: black;
+    background-color: white;
+    font-family: 'Liberation Serif', 'Georgia', serif;
+    font-size: 1.1em;
+}
+#container {
+    width: 700px;
+    margin: 20px auto;
+}
+header {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.4em;
+}
+header h1 {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+footer {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 0.9em;
+    font-color: #444;
+}
+nav {
+    text-align: right;
+}
+nav a {
+    text-decoration: none;
+}
+
+/* Text formatting */
+a {
+    color: #972;
+}
+a:visited {
+    color: #641;
+}
+code, pre, textarea.code {
+    font-family: 'Consolas', 'Menlo', 'Deja Vu Sans Mono',
+                 'Bitstream Vera Sans Mono', monospace !important;
+}
+pre {
+    line-height: 1.25;
+}
+span.description {
+    color: #888;
+    font-size: smaller;
+}
+
+/* Flashes */
+#flashes {
+    margin: 8px auto;
+}
+p.flash {
+    margin: 2px;
+    padding: 4px;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.flash-message {
+    background-color: #ff9;
+}
+.flash-error {
+    background-color: #fcc;
+}
+.flash-success {
+    background-color: #cfc;
+}

@@ -1,0 +1,20 @@
+========================
+Matthew's Flask Skeleton
+========================
+This is a simple skeleton for Flask applications. It assumes that you want
+to use Flask with Flask-Script. The application layout that it sets up is
+fairly bare-bones, and doesn't include any databases, forms, or other fun
+stuff by default.
+
+It does, however, provide tooling for ep.io, in the form of an example
+`epio.ini` and a launcher called `epio_launcher.py`.
+
+To get started, just:
+
+1.  Copy this somewhere.
+2.  Rename `myapp` to the package name of your app.
+3.  Change the package references in `manage.py` (also `epio.ini`).
+4.  Edit the README and LICENSE files as appropriate.
+5.  Add any extensions or packages you want to use to `requirements.txt`.
+6.  Run `sh bootstrap.sh` to set up your virtual environment.
+7.  Hack away!
