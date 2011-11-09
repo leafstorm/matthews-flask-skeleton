@@ -25,6 +25,10 @@ extras = {}
 has_service = lambda svc: (config.has_option("services", svc) and
                            config.getboolean("services", svc))
 
+if (config.has_option("launcher", "use_epio_secret") and
+    config.getboolean("launcher", "use_epio_secret")):
+    extras["SECRET_KEY"] = service_config['core']['secret_key']
+
 if has_service("postgres"):
     extras['SQLALCHEMY_DATABASE_URI'] = (
         "postgresql://%(username)s:%(password)s@%(host)s:%(port)s/%(database)s"

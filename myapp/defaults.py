@@ -15,7 +15,10 @@ the header, and you can use it as a config file.)
 DEBUG = False
 
 #: The secret key used to sign sessions. You can generate one with the command
-#: ``python -c "import os; print(repr(os.urandom(20)))"``.
+#: ``python -c "import os; print(repr(os.urandom(20)))"``. Note that if you
+#: are deploying on ep.io, leaving ``[launcher] use_epio_secret`` as true will
+# use the secret key that ep.io generates for your app, so you don't have to
+# add one yourself.
 SECRET_KEY = 'Not actually secret'
 
 #: The name of the cookie used to store user sessions.
